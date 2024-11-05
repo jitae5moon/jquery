@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#p1").text("hello, world!");
+            });
+
+            $("#btn2").click(function () {
+                $("#p2").text("<h3>hello, world!</h3>");
+            });
+
+            $("#btn3").click(function () {
+                $("#p3").html("<span style='color: green;'>hello, world!</span>");
+            });
+
+            $("#btn4").click(function () {
+                $("#phone").val("010-1234-5678");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    <p>
+        Phone: <input type="text" id="phone" />
+    </p>
+    <button id="btn1">Setting text</button>
+    <button id="btn2">Setting text with tags</button>
+    <button id="btn3">Setting html</button>
+    <button id="btn4">Setting value in input</button>
+</body>
+</html>

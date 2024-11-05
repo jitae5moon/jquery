@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex13</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("h1").addClass("red");
+            });
+
+            $("#btn2").click(function () {
+                $("h2").addClass("blue");
+            });
+        });
+    </script>
+    <style>
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <button id="btn1">Red</button>
+    <button id="btn2">Blue</button>
+</body>
+</html>
